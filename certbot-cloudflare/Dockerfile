@@ -7,7 +7,7 @@ COPY --chmod=0755 ./renew.sh /renew.sh
 COPY --chmod=0755 ./certonly.sh /certonly.sh
 COPY --chmod=0755 ./deploy-hook.sh /deploy-hook.sh
 
-ENV CRON=0 0 * * * \
+ENV CRON="0 0 * * *" \
     TZ= \
     EMAIL= \
     CERT_NAME= \
