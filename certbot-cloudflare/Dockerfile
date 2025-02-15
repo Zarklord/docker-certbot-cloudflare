@@ -1,4 +1,4 @@
-FROM certbot/dns-cloudflare:v2.11.0
+FROM certbot/dns-cloudflare:v3.2.0
 
 RUN apk add tzdata dcron mosquitto-clients --no-cache
 
