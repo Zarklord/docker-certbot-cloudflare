@@ -119,7 +119,7 @@ jobs:
         with:
           files: |
             ./docker-bake.hcl
-            /tmp/bake-meta.json
+            cwd:///tmp/bake-meta.json
           targets: ${{ matrix.target }}
           set: |
             *.tags=
