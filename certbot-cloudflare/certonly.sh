@@ -9,6 +9,6 @@ certbot certonly \
 	--expand \
 	--dns-cloudflare \
 	--dns-cloudflare-credentials /cloudflare.ini \
-	--cert-name $CERT_NAME \
+	--cert-name cert \
 	--domains $DOMAINS \
 	--deploy-hook /deploy-hook.sh

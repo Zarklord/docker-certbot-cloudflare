@@ -10,12 +10,14 @@ COPY --chmod=0755 ./deploy-hook.sh /deploy-hook.sh
 ENV CRON="0 0 * * *" \
     TZ= \
     EMAIL= \
-    CERT_NAME= \
     DOMAINS= \
+    CERT_CHOWN_USER= \
     MQTT_HOST= \
     MQTT_PORT=1883 \
     MQTT_USERNAME= \
-    MQTT_PASSWORD=
+    MQTT_PASSWORD= \
+    MQTT_TOPIC=
 
+VOLUME ["/etc/letsencrypt"]
 ENTRYPOINT ["/entrypoint.sh"]
 CMD [""]
